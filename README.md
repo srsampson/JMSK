@@ -14,11 +14,11 @@ The modulator can either output audio frequency MSK to the soundcard which is su
 
 There is currently no interleaving or FEC (*Forward Error Correction*) and therefore is compatible with other applications that can modulate MSK with [Varicode] such as [Spectrum Lab]. This is convenient for testing and comparison purposes.
 
-##Directory structure
+## Directory structure
 
 The [JMSK](JMSK) directory is where the Qt pro file is for the main application. The [udptextserver](udptextserver) directory is a small demo application for receiving data sent from JMSK. The [JDDS-Arduino](JDDS-Arduino) directory contains both the source code and hardware design for a device (called a JDDS device) that can connect to JMSK to output MSK modulated RF frequencies.
 
-##Compiling JMSK
+## Compiling JMSK
 
 Compiling JMSK requires the Qt framework which can be obtained from http://www.qt.io/download-open-source/ . Qt Creator can be used to compile JMSK and comes with the Qt framework. At least version 5 of the Qt framework is required. Currently MinGW and GCC work as compilers but VC++ does not.
 
